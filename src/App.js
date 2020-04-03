@@ -1,49 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import Person from './Person/Person'
-import {white} from "color-name";
-import styled from 'styled-components'
-
-// const App = props => {
-//
-//     const [ personsState, setPersonsState ] = useState({
-//         persons: [{name: 'Douglas', age: 28}, {name: 'Isabelle', age: 24}]
-//     });
-//
-//     const switchNameHandler = () => {
-//         setPersonsState({
-//             persons:[{name: 'Manobrow', age: 18}, {name: 'Manabraw', age: 19}]
-//         })
-//     };
-//
-//     return (
-//             <div className="App">
-//               <h1>Hi, I'm a React APP!</h1>
-//                 <button onClick={switchNameHandler} >Switch name!</button>
-//                 <Person
-//                     name={personsState.persons[0].name}
-//                     age={personsState.persons[0].age}
-//                 />
-//                 <Person
-//                     name={personsState.persons[1].name}
-//                     age={personsState.persons[1].age}/>
-//             </div>
-//     )
-// };
-
-
-const StyledButton = styled.button`
-            background-color: ${props => props.alt ? 'blue':'green'};
-            color: white;
-            font: inherit;
-            border: 1px solid green;
-            padding-bottom: 8px;
-            cursor: pointer;
-            &:hover {
-                background-color: ${props => props.alt ? 'lightblue' : 'lightgreen'};
-                color: black;
-            }
-        `;
 
 class App extends Component {
     state = {
@@ -120,7 +77,7 @@ class App extends Component {
                 <div className="App">
                     <h1>Hi, I'm a React APP!</h1>
                     <p className={classes.join(' ')}>This is really working!</p>
-                    <StyledButton alt={this.state.showPersons} onClick={() => this.togglePersonsHandler()}>Toggle persons!</StyledButton>
+                    <button className='button' onClick={() => this.togglePersonsHandler()}>Toggle persons!</button>
                     {persons}
                 </div>
         )
