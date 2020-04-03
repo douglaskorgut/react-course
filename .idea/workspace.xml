@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1a41661-039c-4ed4-9fa4-acca676e66c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/getHttpsConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Person.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +87,8 @@
       <workItem from="1585343350337" duration="22427000" />
       <workItem from="1585594454999" duration="2775000" />
       <workItem from="1585853190941" duration="2190000" />
-      <workItem from="1585941233077" duration="1162000" />
+      <workItem from="1585941233077" duration="1818000" />
+      <workItem from="1585943276822" duration="3314000" />
     </task>
     <servers />
   </component>
@@ -93,22 +109,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="278" key="GridCell.Tab.0.bottom" timestamp="1585942403733">
+    <state width="1899" height="278" key="GridCell.Tab.0.bottom" timestamp="1585946655288">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="278" key="GridCell.Tab.0.bottom/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585942403733" />
-    <state width="1899" height="278" key="GridCell.Tab.0.center" timestamp="1585942403733">
+    <state width="1899" height="278" key="GridCell.Tab.0.bottom/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585946655288" />
+    <state width="1899" height="278" key="GridCell.Tab.0.center" timestamp="1585946655288">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="278" key="GridCell.Tab.0.center/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585942403733" />
-    <state width="1899" height="278" key="GridCell.Tab.0.left" timestamp="1585942403732">
+    <state width="1899" height="278" key="GridCell.Tab.0.center/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585946655288" />
+    <state width="1899" height="278" key="GridCell.Tab.0.left" timestamp="1585946655288">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="278" key="GridCell.Tab.0.left/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585942403732" />
-    <state width="1899" height="278" key="GridCell.Tab.0.right" timestamp="1585942403733">
+    <state width="1899" height="278" key="GridCell.Tab.0.left/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585946655288" />
+    <state width="1899" height="278" key="GridCell.Tab.0.right" timestamp="1585946655288">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="278" key="GridCell.Tab.0.right/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585942403733" />
+    <state width="1899" height="278" key="GridCell.Tab.0.right/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1585946655288" />
     <state x="1730" y="160" key="SettingsEditor" timestamp="1585941493703">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
@@ -118,12 +134,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Person/Person.js</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

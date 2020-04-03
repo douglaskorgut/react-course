@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import './App.css';
-import Person from './Person/Person'
+import classes from './App.module.css';
+import Person from './Person/Person.js'
 
 class App extends Component {
+
     state = {
         persons: [{id: 1, name: 'Douglas', age: 28}, {id: 2, name: 'Isabelle', age: 24}, {id: 3, name: 'Lisandra', age: 25}],
         showPersons: false
@@ -18,7 +19,7 @@ class App extends Component {
         const person = persons[personIndex];
         person.name = event.target.value;
 
-        persons[personIndex] = person
+        persons[personIndex] = person;
         this.setState({
             persons: persons
         })
@@ -36,20 +37,9 @@ class App extends Component {
     };
 
     render() {
-        const buttonStyle = {
-            backgroundColor: 'green',
-            color: 'white',
-            font: 'inherit',
-            border: '1px solid green',
-            paddingBottom: '8px',
-            cursor: 'pointer',
-            ':hover': {
-                backgroundColor: 'lightgreen',
-                color: 'black'
-            }
-        };
-
         let persons = null;
+        let btnClass = '';
+
         if (this.state.showPersons) {
             persons = <div>
                 {this.state.persons.map((person,index) =>{
@@ -62,22 +52,24 @@ class App extends Component {
                     />
                 })}
             </div>;
-        }
 
-        const classes = [];
+            btnClass = classes.Blue
+        };
+
+        const cssClasses = [];
 
         if (this.state.persons.length <= 2){
-            classes.push('red')
+            cssClasses.push(classes.red)
         }
         if (this.state.persons.length <= 1){
-            classes.push('bold')
+            cssClasses.push(classes.bold)
         }
 
         return (
-                <div className="App">
+                <div className={classes.App}>
                     <h1>Hi, I'm a React APP!</h1>
-                    <p className={classes.join(' ')}>This is really working!</p>
-                    <button className='button' onClick={() => this.togglePersonsHandler()}>Toggle persons!</button>
+                    <p className={cssClasses.join(' ')}>This is really working!</p>
+                    <button className={btnClass} onClick={() => this.togglePersonsHandler()}>Toggle persons!</button>
                     {persons}
                 </div>
         )
