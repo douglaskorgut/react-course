@@ -1,15 +1,27 @@
 import React, {Component} from "react";
 import classes from './Person.module.css';
-import Aux from '../../../hoc/Aux';
+import WithClass from '../../../hoc/WithClass';
+import AuthContext from '../../../context/auth-context'
 
 class Person extends Component {
+
+    constructor(props) {
+        super(props);
+        this.inputElementRef = React.createRef()
+    }
+
+    componentDidMount() {
+        if (this.props.name === 'Isabelle') this.inputElementRef.current.focus();
+    }
+
     render() {
         return (
-            <Aux className={classes.Person}>
-                <p onClick={this.props.click}> My name is {this.props.name}! and I'm {this.props.age} years old</p>
-                <p>{this.props.children}</p>
-                <input onChange={this.props.changed} value={this.props.name} />
-            </Aux>
+                <WithClass className={classes.Person}>
+                    <AuthContext.Consumer>{(context) => context.authenticated ? <p>Authenticated</p> : <p>Please log-in</p> }</AuthContext.Consumer>
+                    <p onClick={this.props.click}> My name is {this.props.name}! and I'm {this.props.age} years old</p>
+                    <p>{this.props.children}</p>
+                    <input onChange={this.props.changed} value={this.props.name} ref={this.inputElementRef} />
+                </WithClass>
         )
     }
 };

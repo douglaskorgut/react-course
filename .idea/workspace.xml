@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1a41661-039c-4ed4-9fa4-acca676e66c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hoc/Aux.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/auth-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/WithClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Persons/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Persons/Person/Person.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Persons/Persons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Persons/Persons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="react-course" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,7 +92,7 @@
       <workItem from="1585853190941" duration="2190000" />
       <workItem from="1585941233077" duration="1818000" />
       <workItem from="1585943276822" duration="3314000" />
-      <workItem from="1586183863704" duration="15038000" />
+      <workItem from="1586183863704" duration="26160000" />
     </task>
     <servers />
   </component>
@@ -112,22 +117,22 @@
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
     <state x="1836" y="187" key="#ESLint/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586205914015" />
-    <state width="948" height="354" key="GridCell.Tab.0.bottom" timestamp="1586186475612">
+    <state width="1874" height="354" key="GridCell.Tab.0.bottom" timestamp="1586272098355">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="948" height="354" key="GridCell.Tab.0.bottom/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586186475612" />
-    <state width="948" height="354" key="GridCell.Tab.0.center" timestamp="1586186475612">
+    <state width="1874" height="354" key="GridCell.Tab.0.bottom/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586272098355" />
+    <state width="1874" height="354" key="GridCell.Tab.0.center" timestamp="1586272098355">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="948" height="354" key="GridCell.Tab.0.center/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586186475612" />
-    <state width="948" height="354" key="GridCell.Tab.0.left" timestamp="1586186475612">
+    <state width="1874" height="354" key="GridCell.Tab.0.center/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586272098355" />
+    <state width="1874" height="354" key="GridCell.Tab.0.left" timestamp="1586272098355">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="948" height="354" key="GridCell.Tab.0.left/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586186475612" />
-    <state width="948" height="354" key="GridCell.Tab.0.right" timestamp="1586186475612">
+    <state width="1874" height="354" key="GridCell.Tab.0.left/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586272098355" />
+    <state width="1874" height="354" key="GridCell.Tab.0.right" timestamp="1586272098355">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
-    <state width="948" height="354" key="GridCell.Tab.0.right/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586186475612" />
+    <state width="1874" height="354" key="GridCell.Tab.0.right/1280.0.1920.1080/0.360.1280.720@1280.0.1920.1080" timestamp="1586272098355" />
     <state x="1730" y="160" key="SettingsEditor" timestamp="1585941493703">
       <screen x="1280" y="0" width="1920" height="1080" />
     </state>
